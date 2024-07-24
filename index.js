@@ -69,7 +69,8 @@ const sortEmoji = list => list.sort((a, b) => a.sort_order - b.sort_order);
 const categoryKeys = Object.keys(Categories);
 
 const TabBar = ({ theme, activeCategory, onPress, width }) => {
-  const tabSize = width / categoryKeys.length;
+  const tabSize = 40;
+  //const tabSize = width / categoryKeys.length;
 
   return categoryKeys.map(c => {
     const category = Categories[c];
